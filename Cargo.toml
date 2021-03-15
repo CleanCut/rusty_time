@@ -1,0 +1,17 @@
+[package]
+name = "todo"
+version = "0.1.0"
+authors = ["Nathan Stocks <nathan@agileperception.com>"]
+description = "todo: Description"
+edition = "2018"
+homepage = "https://github.com/CleanCut/todo"
+repository = "https://github.com/CleanCut/todo"
+readme = "README.md"
+# todo: choose appropriate keywords and categories
+#keywords = ["game", "engine", "graphics", "audio", "rusty"]
+#categories = ["game-engines"]
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
