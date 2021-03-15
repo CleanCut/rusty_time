@@ -29,7 +29,7 @@ fn main() {
 
 ### Historical Note
 
-`rusty_time` was part of [`rusty_engine`] up until after version `0.11`.
+`rusty_time` was part of [`rusty_engine`] up until after version `0.11.1`.
 
 [`rusty_engine`]: https://github.com/cleancut/rusty_engine
 
