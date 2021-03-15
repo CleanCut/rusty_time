@@ -7,8 +7,9 @@
 ### Fixed
 
 - When a timer reaches zero, `timer.time_left` is now a Duration of zero length.
+- Split out of [rusty_engine]
 
-## 0.11.x
+## 0.11.0 and 0.11.1 (there is no 0.11.2)
 
 ### Added
 
