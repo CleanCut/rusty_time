@@ -6,7 +6,7 @@ A simple timer.
 
 ```toml
 # Add this to your [dependencies] section in Cargo.toml
-rusty_timer = "0.11.2"
+rusty_timer = "0.11.3"
 ```
 
 ```rust
