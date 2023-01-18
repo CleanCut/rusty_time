@@ -2,7 +2,22 @@
 
 ## [Unreleased] - ReleaseDate
 
+### Improved
+
+- Make `Timer` available at `rusty_time::Timer`, because it really doesn't need to be harder than that
+- Update to Rust 2021 edition
+- Add release documentation
+
+### Fixed
+
+- Fix errors in the example in the readme 🤦🏻‍♂️ and otherwise improve the example
+- Fix other typos in the readme
+- Fix the release configuration (and move it to `release.toml`)
+- Fix the links in this changelog
+
 ## [0.11.3] - 2021-03-14
+
+- Moved code to a standalone repository
 
 ### Fixed
 
@@ -20,6 +35,5 @@
 [`rusty_sword`]: https://github.com/cleancut/rusty_sword
 
 <!-- next-url -->
-[Unreleased]: https://github.com/cleancut/rusty_audio/compare/v0.11.3...HEAD
-[0.11.3]: https://github.com/cleancut/rusty_audio/compare/v1.2.0...v0.11.3
-[1.2.0]: https://github.com/cleancut/rusty_audio/compare/v1.1.5...v1.2.0
+[Unreleased]: https://github.com/cleancut/rusty_time/compare/v0.11.3...HEAD
+[0.11.3]: https://github.com/cleancut/rusty_time/compare/initial...v0.11.3

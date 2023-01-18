@@ -8,7 +8,7 @@ cargo install cargo-release
 
 # Configuration
 
-Configuration goes in the `[package.metadata.release]` section of `Cargo.toml`
+Configuration goes in `release.toml`
 
 # Releasing
 
@@ -16,8 +16,8 @@ Configuration goes in the `[package.metadata.release]` section of `Cargo.toml`
 # First, choose `major`, `minor`, or `patch` for the level to release
 
 # Next, run the command in dry-run mode
-$ cargo release -n minor
+$ cargo release -vv LEVEL
 
 # Then do it for real with the same level
-$ cargo release minor
+$ cargo release --execute LEVEL
 ```

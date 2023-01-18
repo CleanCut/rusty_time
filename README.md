@@ -4,25 +4,29 @@ A simple timer.
 
 ### Example
 
+Either run `cargo add rusty_timer` or manually add the following to the `[dependencies]` section of your `Cargo.toml` file.
+
 ```toml
-# Add this to your [dependencies] section in Cargo.toml
 rusty_timer = "0.11.3"
 ```
 
 ```rust
 // main.rs
-use rusty_timer::Timer;
+use rusty_time::Timer;
 
 fn main() {
-    // Create a timer ahead of time
+    // Create a timer
     let mut timer = Timer::from_millis(500);
-    // In your game- or event-loop, updated the timer
+
+    // In some sort of game-loop or event-loop, update the timer
     loop {
-        let delta = Duration::from_millis(16);
+        let delta = std::time::Duration::from_millis(16);
         timer.update(delta);
         if timer.ready {
+            println!("Ready!");
             break;
         }
+        println!("Time left: {:?}", timer.time_left);
     }
 }
 ```
@@ -45,4 +49,4 @@ See [license/APACHE](license/APACHE) and [license/MIT](license/MIT).
 
 ## Sponsor
 
-If you like `rusty_time`, please consider [sponsoring me] on GitHub. 💖
+If you like `rusty_time`, please consider [sponsoring me](https://github.com/sponsors/CleanCut) on GitHub. 💖
