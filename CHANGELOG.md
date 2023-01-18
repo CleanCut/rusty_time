@@ -9,6 +9,7 @@
 - Make `Timer` available at `rusty_time::Timer`, because it really doesn't need to be harder than that
 - Update to Rust 2021 edition
 - Add release documentation
+- Derive the `Clone`, `Debug`, `Default`, `Eq`, and `PartialEq` traits for `Timer`
 
 ### Fixed
 
