@@ -7,7 +7,7 @@ A simple timer.
 Either run `cargo add rusty_timer` or manually add the following to the `[dependencies]` section of your `Cargo.toml` file.
 
 ```toml
-rusty_timer = "0.11.3"
+rusty_timer = "0.12.0"
 ```
 
 ```rust

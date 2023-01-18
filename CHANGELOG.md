@@ -1,6 +1,8 @@
 <!-- next-header -->
-
 ## [Unreleased] - ReleaseDate
+
+
+## [0.12.0] - 2023-01-18
 
 ### Improved
 
@@ -35,5 +37,6 @@
 [`rusty_sword`]: https://github.com/cleancut/rusty_sword
 
 <!-- next-url -->
-[Unreleased]: https://github.com/cleancut/rusty_time/compare/v0.11.3...HEAD
+[Unreleased]: https://github.com/CleanCut/rusty_time/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/cleancut/rusty_time/compare/v0.11.3...v0.12.0
 [0.11.3]: https://github.com/cleancut/rusty_time/compare/initial...v0.11.3
