@@ -1,41 +1,37 @@
 # Rusty Time
 
-A simple timer.
+A simple timer. See also the [reference docs on docs.rs](https://docs.rs/rusty_time/latest/rusty_time/)
 
-### Example
+## Quick Start
 
-Either run `cargo add rusty_timer` or manually add the following to the `[dependencies]` section of your `Cargo.toml` file.
+Add `rusty_timer` to your `Cargo.toml` with:
 
-```toml
-rusty_timer = "0.12.0"
+```shell
+cargo add rusty_timer
 ```
+
+Then use it like this:
 
 ```rust
-// main.rs
-use rusty_time::Timer;
-
 fn main() {
-    // Create a timer
-    let mut timer = Timer::from_millis(500);
+    let mut timer = Timer::new(Duration::from_secs_f32(1.5));
 
-    // In some sort of game-loop or event-loop, update the timer
+    let mut start_time = Instant::now();
     loop {
-        let delta = std::time::Duration::from_millis(16);
-        timer.update(delta);
-        if timer.ready {
-            println!("Ready!");
+        timer.tick(start_time.elapsed());
+        start_time = Instant::now();
+        println!(
+            "Time on timer: {:.2}s ({:.1}%)",
+            timer.remaining().as_secs_f32(),
+            timer.percent_left() * 100.0
+        );
+        if timer.just_finished() {
             break;
         }
-        println!("Time left: {:?}", timer.time_left);
     }
+    println!("Timer finished!");
 }
 ```
-
-### Historical Note
-
-`rusty_time` was part of [`rusty_engine`] up until after version `0.11.1`.
-
-[`rusty_engine`]: https://github.com/cleancut/rusty_engine
 
 ## Contribution
 
