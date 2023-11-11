@@ -1,6 +1,9 @@
 <!-- next-header -->
 ## [Unreleased] - ReleaseDate
 
+### MAJOR OVERHAUL
+
+I wanted a more ergonomic overhaul, so I changed `Timer` almost completely. Now there's lots more methods and functionality. Check it out!
 
 ## [0.12.0] - 2023-01-18
 
