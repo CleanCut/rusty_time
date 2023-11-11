@@ -1,6 +1,8 @@
 <!-- next-header -->
 ## [Unreleased] - ReleaseDate
 
+## [1.1.0] - 2023-11-11
+
 ### Improved
 
 - `tick` now returns a mutable reference to the timer, so you can fun things like `if timer.tick(delta).just_finished() { /* do stuff */ }`
@@ -47,7 +49,8 @@ I wanted a more ergonomic overhaul, so I changed `Timer` almost completely. Now 
 [`rusty_sword`]: https://github.com/cleancut/rusty_sword
 
 <!-- next-url -->
-[Unreleased]: https://github.com/CleanCut/rusty_time/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/CleanCut/rusty_time/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/CleanCut/rusty_time/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/CleanCut/rusty_time/compare/v0.12.0...v1.0.0
 [0.12.0]: https://github.com/cleancut/rusty_time/compare/v0.11.3...v0.12.0
 [0.11.3]: https://github.com/cleancut/rusty_time/compare/initial...v0.11.3
