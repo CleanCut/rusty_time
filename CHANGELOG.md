@@ -1,6 +1,10 @@
 <!-- next-header -->
 ## [Unreleased] - ReleaseDate
 
+### Improved
+
+- `tick` now returns a mutable reference to the timer, so you can fun things like `if timer.tick(delta).just_finished() { /* do stuff */ }`
+
 ## [1.0.0] - 2023-11-11
 
 ### MAJOR OVERHAUL

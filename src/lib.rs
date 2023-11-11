@@ -78,16 +78,17 @@ impl Timer {
     }
 
     /// Advance the timer by a specific duration. This _must_ be called for the timer to be useful.
-    pub fn tick(&mut self, delta: Duration) {
+    pub fn tick(&mut self, delta: Duration) -> &mut Self {
         self.just_finished = false;
         if self.finished {
-            return;
+            return self;
         }
         self.remaining = self.remaining.saturating_sub(delta);
         if self.remaining == Duration::ZERO {
             self.just_finished = true;
             self.finished = true;
         }
+        self
     }
 
     /// Whether the timer hit zero since the last call to [`tick`](Timer::tick).
